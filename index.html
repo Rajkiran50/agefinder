@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styler.css">
+  <title>RAJ KIRAN | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 19px; text-align: center; font-weight: 700; font-family:'Poppins', sans-serif;}
+    .attribution a { color: hsl(270, 11%, 83%); }
+  </style>
+</head>
+<body>
+
+
+  <div class="generall-div">
+    <div class="top-div">
+      <div class="day-div">
+        <p class="dayError">DAY</p>
+        <input type="text" placeholder="DD"  class="day" onkeyup="activeErrors()">
+        <p class="errorDay"></p>
+      </div>
+      <div class="month-div">
+        <p class="monthError">MONTH</p>
+        <input type="text" placeholder="MM" class="month" onkeyup="activeErrors()">
+        <p class="errorMonth"></p>
+      </div>
+      <div class="year-div">
+        <p class="yearError">YEAR</p>
+        <input type="text" placeholder="YY" class="year"  onkeyup="activeErrors()">
+        <p class="errorYear"></p>
+      </div>
+
+      
+    </div>
+    <div class="middle-div">
+      <div class="line-hr">
+        <hr>
+      </div>
+      <div class="aligment">
+        <button class="input-btn" onclick="calculator()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+      
+    </div>
+    <div class="last-div">
+      <div>
+        <p class="yearsFinal">--</p>
+        <strong><p class="yearP">years</p></strong>
+      </div>
+      <div>
+        <p class="monthFinal">--</p>
+        <p class="yearP">months</p>
+      </div>
+      <div>
+        <p class="daysFinal">--</p>
+        <p class="yearP">days</p>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    DEVELOPED BY <a href="https://rajkirankudupudi.netlify.app/" target="_blank">RAJ KIRAN K</a>
+    
+  </div>
+
+  <script src="life.js"></script>
+</body>
+</html>

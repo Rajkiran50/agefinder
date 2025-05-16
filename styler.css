@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    
+}
+
+body {
+
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(54,123,252,1) 16.3%, rgba(0,41,118,1) 100.2% );
+    
+
+}
+
+
+.generall-div{
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 40%;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
+
+
+.top-div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.day-div{
+    width: 100%;
+}
+
+.month-div{
+    width: 100%;
+}
+
+.year-div{
+    width: 100%;
+}
+
+.day , .month , .year{
+    font-size: 22px;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid hsl(0, 0%, 86%);
+    border-radius: 10px;
+}
+
+.day:focus, .month:focus , .year:focus{
+    outline: none;
+    border: 2px solid rgb(209, 34, 34);
+}
+
+
+.dayError , .monthError , .yearError{
+    font-size: 15px;
+    color: rgb(27, 17, 116);
+}
+
+.middle-div{
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    
+    
+    
+    
+    
+}
+
+
+.line-hr{
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: rgb(27, 17, 116);
+    align-self: center;
+    z-index: -1;
+}
+
+
+
+
+
+.input-btn{
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 2;
+    margin-right: 25px;
+    
+    
+}
+
+
+
+.last-div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.last-div div{
+    padding: 5px 0;
+}
+
+.yearsFinal , .monthFinal , .daysFinal {
+    display: inline;
+    font-size: 80px;
+    color: rgb(230, 73, 21);
+}
+
+.yearP{
+    display: inline;
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.errorDay , .errorMonth , .errorYear {
+    font-size: 12px;
+    margin-top: 3px;
+    color: red;
+}
+
+
+
+
+@media (max-width : 1194px) {
+   
+
+    .yearP{
+        font-size: 65px;
+    }
+
+    .yearsFinal , .monthFinal , .daysFinal {
+        display: inline;
+        font-size: 65px;
+        color: hsl(259, 100%, 65%);
+    }
+
+}
+
+
+@media (max-width : 970px) {
+   
+
+    .generall-div{
+        width: 70%;
+    }
+
+    .yearP{
+        font-size: 40px;
+    }
+
+    .yearsFinal , .monthFinal , .daysFinal {
+        display: inline;
+        font-size: 40px;
+        color: rgb(230, 73, 21);
+    }
+
+
+    .day , .month , .year{
+        font-size: 22px;
+        width: 60px;
+        padding: 10px;
+        border: 2px solid rgb(230, 73, 21);
+        border-radius: 10px;
+    }
+
+    .input-btn{
+        margin-right: 160px;
+    }
+
+    
+
+}
+
+
+@media (max-width : 485px) {
+    .generall-div{
+        width: 100%;
+    }
+}
